@@ -1,0 +1,9 @@
+/node_modules
+
+# add dist to ignore
+/dist
+
+# add .env to ignore
+/.env
+
+# add .env.local to ignore

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Product Viewer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="canvas-container">
+            <canvas id="three-canvas"></canvas>
+        </div>
+        
+        <div id="ui-overlay">
+            <div id="product-info">
+                <h1>3D Chair Viewer</h1>
+                <p>Click on different parts to explore the chair</p>
+            </div>
+            
+            <div id="part-info" class="hidden">
+                <h3 id="part-name">Chair Part</h3>
+                <button id="close-info">&times;</button>
+            </div>
+            
+            <div id="controls">
+                <button id="toggle-rotation">Pause Rotation</button>
+                <button id="reset-camera">Reset View</button>
+            </div>
+        </div>
+        
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Loading 3D Model...</p>
+        </div>
+    </div>
+
+    <!-- Application Entry Point -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html> 
